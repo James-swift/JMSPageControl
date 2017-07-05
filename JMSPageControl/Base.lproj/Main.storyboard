@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JMSPageControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PWj-5y-5gJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Storyboard中默认的JMPageControl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1f-DC-gYj">
+                                        <rect key="frame" x="0.0" y="192.5" width="375" height="30"/>
+                                        <color key="backgroundColor" red="0.23921568630000001" green="0.7843137255" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Qil-do-qVX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="textColor" red="0.96078431369999995" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbc-V1-EUg">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="192.5"/>
+                                    </scrollView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="trD-NR-qKd" customClass="JMSPageControl" customModule="JMSPageControl" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="154.5" width="375" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="bc0-Gw-f2R"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="b1f-DC-gYj" firstAttribute="leading" secondItem="PWj-5y-5gJ" secondAttribute="leading" id="3AX-XH-Ebc"/>
+                                    <constraint firstAttribute="trailing" secondItem="pbc-V1-EUg" secondAttribute="trailing" id="3tK-DF-n2H"/>
+                                    <constraint firstAttribute="trailing" secondItem="trD-NR-qKd" secondAttribute="trailing" id="BPo-PV-BSF"/>
+                                    <constraint firstItem="trD-NR-qKd" firstAttribute="leading" secondItem="PWj-5y-5gJ" secondAttribute="leading" id="EkR-aj-UQb"/>
+                                    <constraint firstItem="b1f-DC-gYj" firstAttribute="top" secondItem="trD-NR-qKd" secondAttribute="bottom" constant="8" id="IHk-8q-9oP"/>
+                                    <constraint firstItem="pbc-V1-EUg" firstAttribute="top" secondItem="PWj-5y-5gJ" secondAttribute="top" id="TR9-Oo-Q6x"/>
+                                    <constraint firstItem="pbc-V1-EUg" firstAttribute="leading" secondItem="PWj-5y-5gJ" secondAttribute="leading" id="b5z-vn-4Hd"/>
+                                    <constraint firstItem="b1f-DC-gYj" firstAttribute="top" secondItem="pbc-V1-EUg" secondAttribute="bottom" id="bWE-dl-Kct"/>
+                                    <constraint firstAttribute="bottom" secondItem="b1f-DC-gYj" secondAttribute="bottom" id="lLB-nH-U2V"/>
+                                    <constraint firstAttribute="trailing" secondItem="b1f-DC-gYj" secondAttribute="trailing" id="wno-WE-Pk4"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6a5-4r-8bm">
+                                <rect key="frame" x="0.0" y="222.5" width="375" height="222"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="带动画效果的JMPageControl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8t2-LA-Dzm">
+                                        <rect key="frame" x="0.0" y="192" width="375" height="30"/>
+                                        <color key="backgroundColor" red="0.23921568630000001" green="0.7843137255" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="uvU-bQ-Lcp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="textColor" red="0.96078431369999995" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJt-Ha-Pr7">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="192"/>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="EJt-Ha-Pr7" firstAttribute="top" secondItem="6a5-4r-8bm" secondAttribute="top" id="Qts-OW-REd"/>
+                                    <constraint firstItem="8t2-LA-Dzm" firstAttribute="top" secondItem="EJt-Ha-Pr7" secondAttribute="bottom" id="YyL-hp-0Ye"/>
+                                    <constraint firstAttribute="bottom" secondItem="8t2-LA-Dzm" secondAttribute="bottom" id="ZO3-1m-Hjz"/>
+                                    <constraint firstAttribute="trailing" secondItem="8t2-LA-Dzm" secondAttribute="trailing" id="dA9-QY-i0M"/>
+                                    <constraint firstItem="8t2-LA-Dzm" firstAttribute="leading" secondItem="6a5-4r-8bm" secondAttribute="leading" id="ejU-NA-rWn"/>
+                                    <constraint firstAttribute="trailing" secondItem="EJt-Ha-Pr7" secondAttribute="trailing" id="vjK-5a-gdj"/>
+                                    <constraint firstItem="EJt-Ha-Pr7" firstAttribute="leading" secondItem="6a5-4r-8bm" secondAttribute="leading" id="zGG-ae-nwS"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hYE-v4-8nO">
+                                <rect key="frame" x="0.0" y="444.5" width="375" height="222.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用图片效果的JMPageControl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZj-vk-D1h">
+                                        <rect key="frame" x="0.0" y="192.5" width="375" height="30"/>
+                                        <color key="backgroundColor" red="0.23921568630000001" green="0.7843137255" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="GWE-ne-X3a"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="textColor" red="0.96078431369999995" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJf-JC-g91">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="192.5"/>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="PJf-JC-g91" firstAttribute="top" secondItem="hYE-v4-8nO" secondAttribute="top" id="5fc-LK-XTM"/>
+                                    <constraint firstItem="WZj-vk-D1h" firstAttribute="top" secondItem="PJf-JC-g91" secondAttribute="bottom" id="9fr-3z-w7O"/>
+                                    <constraint firstAttribute="trailing" secondItem="WZj-vk-D1h" secondAttribute="trailing" id="GLP-jl-UvV"/>
+                                    <constraint firstAttribute="trailing" secondItem="PJf-JC-g91" secondAttribute="trailing" id="GfU-dC-b3i"/>
+                                    <constraint firstItem="WZj-vk-D1h" firstAttribute="leading" secondItem="hYE-v4-8nO" secondAttribute="leading" id="R1d-cy-eaH"/>
+                                    <constraint firstItem="PJf-JC-g91" firstAttribute="leading" secondItem="hYE-v4-8nO" secondAttribute="leading" id="rEN-Rc-61m"/>
+                                    <constraint firstAttribute="bottom" secondItem="WZj-vk-D1h" secondAttribute="bottom" id="vb7-vc-BMy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hYE-v4-8nO" firstAttribute="height" secondItem="PWj-5y-5gJ" secondAttribute="height" id="33v-OF-VcV"/>
+                            <constraint firstItem="PWj-5y-5gJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5Yr-RB-VoG"/>
+                            <constraint firstItem="PWj-5y-5gJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="5aw-1n-77m"/>
+                            <constraint firstItem="6a5-4r-8bm" firstAttribute="height" secondItem="PWj-5y-5gJ" secondAttribute="height" id="70O-Vq-bzy"/>
+                            <constraint firstAttribute="trailing" secondItem="6a5-4r-8bm" secondAttribute="trailing" id="7Uh-yC-kAf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hYE-v4-8nO" secondAttribute="bottom" id="MUe-yD-E15"/>
+                            <constraint firstAttribute="trailing" secondItem="PWj-5y-5gJ" secondAttribute="trailing" id="bi0-DB-sqv"/>
+                            <constraint firstItem="hYE-v4-8nO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="c9L-RH-9eX"/>
+                            <constraint firstAttribute="trailing" secondItem="hYE-v4-8nO" secondAttribute="trailing" id="ggF-LT-GMy"/>
+                            <constraint firstItem="6a5-4r-8bm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="poa-XU-J5I"/>
+                            <constraint firstItem="hYE-v4-8nO" firstAttribute="top" secondItem="6a5-4r-8bm" secondAttribute="bottom" id="qFa-rL-gbD"/>
+                            <constraint firstItem="6a5-4r-8bm" firstAttribute="top" secondItem="PWj-5y-5gJ" secondAttribute="bottom" id="rb3-8P-bCZ"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="cstStoryboardPageControl" destination="trD-NR-qKd" id="8sL-Lf-Trl"/>
+                        <outlet property="scrollView1" destination="pbc-V1-EUg" id="1L8-Sw-Drt"/>
+                        <outlet property="scrollView2" destination="EJt-Ha-Pr7" id="SCv-Gv-Cpd"/>
+                        <outlet property="scrollView3" destination="PJf-JC-g91" id="VOh-Eg-N18"/>
+                        <outlet property="wrap1" destination="PWj-5y-5gJ" id="1fc-Ie-dyC"/>
+                        <outlet property="wrap2" destination="6a5-4r-8bm" id="r8s-qE-fKW"/>
+                        <outlet property="wrap3" destination="hYE-v4-8nO" id="ikR-Wj-FX4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44" y="190.25487256371815"/>
+        </scene>
+    </scenes>
+</document>
